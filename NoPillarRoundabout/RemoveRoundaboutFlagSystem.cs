@@ -1,18 +1,21 @@
-﻿using Game;
+﻿using Colossal.Logging;
+using Game;
 using Game.Prefabs;
 using Unity.Collections;
 using Unity.Entities;
 
-namespace DisablePillarRoundabout
+namespace NoPillarRoundabout
 {
     public partial class RemoveRoundaboutFlagSystem : GameSystemBase
     {
         private bool m_Initialized = false;
         private PrefabSystem m_PrefabSystem;
+        private ILog m_log;
 
         protected override void OnCreate()
         {
-            Mod.log.Info($"{nameof(RemoveRoundaboutFlagSystem)}.{nameof(OnCreate)}");
+            m_log = Mod.log;
+            m_log.Info($"{nameof(RemoveRoundaboutFlagSystem)}.{nameof(OnCreate)}");
 
             m_PrefabSystem = World.GetOrCreateSystemManaged<PrefabSystem>();
             base.OnCreate();
@@ -55,7 +58,7 @@ namespace DisablePillarRoundabout
 
             entities.Dispose();
 
-            Mod.log.Info($"{nameof(RemoveRoundaboutFlagSystem)}.{nameof(OnUpdate)} {cnt} prefabs affected");
+            m_log.Info($"{nameof(RemoveRoundaboutFlagSystem)}.{nameof(OnUpdate)} {cnt} prefabs affected");
         }
     }
 }

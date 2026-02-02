@@ -4,11 +4,11 @@ using Game;
 using Game.Modding;
 using Game.SceneFlow;
 
-namespace DisablePillarRoundabout
+namespace NoPillarRoundabout
 {
     public class Mod : IMod
     {
-        public static ILog log = LogManager.GetLogger($"{nameof(DisablePillarRoundabout)}.{nameof(Mod)}").SetShowsErrorsInUI(false);
+        public static ILog log = LogManager.GetLogger($"{nameof(NoPillarRoundabout)}.{nameof(Mod)}").SetShowsErrorsInUI(false);
 
         public void OnLoad(UpdateSystem updateSystem)
         {
