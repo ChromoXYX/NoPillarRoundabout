@@ -2,7 +2,7 @@
 
 A Cities: Skylines 2 Mod.
 
-Disables roundabout update caused by bridge pillars hovering over intersections,
+Disables roundabout update caused by pillars hovering over intersections,
 by removing composition flag `Roundabout` from pillar prefabs.
 
 ## Support
@@ -22,3 +22,7 @@ DLL binaries will be copied to `AppData\LocalLow\Colossal Order\Cities Skylines 
 ## License
 
 [MIT](https://github.com/ChromoXYX/NoPillarRoundabout/blob/master/LICENSE)
+
+## What's Next
+
+- Better pillar alignment/attachment.
