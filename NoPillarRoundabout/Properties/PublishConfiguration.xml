@@ -14,6 +14,8 @@ A Cities: Skylines 2 Mod.
 Disables roundabout update caused by pillars hovering over intersections,
 by removing composition flag `Roundabout` from pillar prefabs.
 
+This mod **cannot prevent pillars from snapping to the center of intersections underneath.**
+
 ## Support
 
 Bug reports and feature requests can be made on the [GitHub Issues](https://github.com/ChromoXYX/NoPillarRoundabout/issues),
@@ -34,19 +36,20 @@ DLL binaries will be copied to `AppData\LocalLow\Colossal Order\Cities Skylines 
 
 ## What's Next
 
-- Better pillar alignment/attachment.
+- Better pillar alignment/attachment, stop pillars from snapping to the center of intersections underneath.
 
   </LongDescription>
 	<!--Thumbnail-->
 	<Thumbnail Value="Properties/Thumbnail.jpg" />
 	<!--Screenshot, can be set multiple times-->
-	<Screenshot Value="" />
+	<Screenshot Value="Properties/Screenshot_1.png" />
+  <Screenshot Value="Properties/Screenshot_2.png" />
 	<!--Tag, can be set multiple times-->
 	<Tag Value="" />
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="1.0.1" />
+	<ModVersion Value="1.0.2" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.5.3f1" />
 	<!--Dependency for the mod, can be set multiple times-->
@@ -54,9 +57,7 @@ DLL binaries will be copied to `AppData\LocalLow\Colossal Order\Cities Skylines 
 	<!--Required DLC, can be set multiple times. Supported values are "Landmark Buildings", "San Fransisco Set", "Beach Properties", "Urban Promenades", "Modern Architecture"-->
 	<RequiredDLC Value="" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-  <ChangeLog>non-functional change.
-rename namespace to NoPillarRoundabout to match mod name.
-sry for inconvenience.
+  <ChangeLog>bug fix: fixed potential NullReferenceException thrown by logger during startup.
   </ChangeLog>
 	<!--<ChangeLog>
 	</ChangeLog>-->

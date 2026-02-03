@@ -14,7 +14,7 @@ namespace NoPillarRoundabout
 
         protected override void OnCreate()
         {
-            m_log = Mod.log;
+            m_log = Mod.Log;
             m_log.Info($"{nameof(RemoveRoundaboutFlagSystem)}.{nameof(OnCreate)}");
 
             m_PrefabSystem = World.GetOrCreateSystemManaged<PrefabSystem>();
